@@ -1,4 +1,5 @@
 # robust_MT_evaluation
+<<<<<<< HEAD
 Repository for ["BLEU Meets COMET: Combining Lexical and Neural Metrics Towards Robust Machine Translation Evaluation"](https://arxiv.org/abs/2305.19144), accepted at EAMT 2023.
 
 
@@ -117,3 +118,8 @@ If you use COMET please cite our work! Also, don't forget to say which model you
 - [Unbabel's Participation in the WMT20 Metrics Shared Task](https://aclanthology.org/2020.wmt-1.101/)
 
 - [COMET: A Neural Framework for MT Evaluation](https://www.aclweb.org/anthology/2020.emnlp-main.213)
+=======
+Repository for "BLEU Meets COMET: Combining Lexical and Neural Metrics Towards Robust Machine Translation Evaluation", accepted at EAMT 2023.
+
+Code will be added soon.
+>>>>>>> c46c4a07a098df06cba55aedebc2dd8ac249cf05
