@@ -1,0 +1,29 @@
+regression_metric:
+  class_path: comet.models.RegressionMetric
+  init_args:
+    nr_frozen_epochs: 0.3
+    keep_embeddings_frozen: True
+    optimizer: AdamW
+    encoder_learning_rate: 1.0e-05
+    learning_rate: 3.1e-05
+    layerwise_decay: 0.95
+    encoder_model: XLM-RoBERTa
+    pretrained_model: xlm-roberta-large
+    pool: avg
+    layer: mix
+    dropout: 0.15
+    batch_size: 4
+    activations: Tanh
+    train_data: data/train/train1720_original_and_feats.csv
+    validation_data: data/dev/df_dev_and_feats.csv
+    hidden_sizes:
+      - 3072
+      - 1024
+    hidden_sizes_bottleneck: 
+      - 64
+    feature_size: 2
+    model_type: original
+    
+trainer: ../trainer.yaml
+early_stopping: ../early_stopping.yaml
+model_checkpoint: ../model_checkpoint.yaml
