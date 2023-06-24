@@ -76,16 +76,15 @@ To train a COMET model on your data you can use the following configuration file
 
 Here are the pretrained models that can be used to evaluate your translations:
 
-- `comet-wl-tags`: **COMET+WL-tags** Regression model with incorporated into the architecture word-level OK / BAD tags that correspond to the subwords of the translation hypothesis.
+- `comet-wl-tags`: Regression model with incorporated into the architecture word-level OK / BAD tags that correspond to the subwords of the translation hypothesis. (**COMET+WL-tags**)
 
-- `comet-sl-feats`: **COMET+SL-feat.** Regression model that was enhanced with scores obtained from other metrics, BLEU and CHRF, that are used as sentence-level (SL) features in a late fusion manner.
+- `comet-sl-feats`: Regression model that was enhanced with scores obtained from other metrics, BLEU and CHRF, that are used as sentence-level (SL) features in a late fusion manner. (**COMET+SL-feat.**)
 
-- `comet-aug`: **COMET+aug** Regression model that was trained on a mixture of original and augmented Direct Assessments from WMT17 to WMT20. We use the code provided by the authors of [SMAUG](https://github.com/Unbabel/smaug) and apply their choice of hyperparameters, including the optimal percentage of the augmented data.
+- `comet-aug`: Regression model that was trained on a mixture of original and augmented Direct Assessments from WMT17 to WMT20. We use the code provided by the authors of [SMAUG](https://github.com/Unbabel/smaug) and apply their choice of hyperparameters, including the optimal percentage of the augmented data. (**COMET+aug**)
 
 
-**Note:** The range of scores between different models can be totally different. To better understand COMET scores please [take a look at our FAQs](https://unbabel.github.io/COMET/html/faqs.html)
+**Note:** The range of scores between different models can be totally different. To better understand COMET scores please [take a look at these FAQs](https://unbabel.github.io/COMET/html/faqs.html)
 
-For more information about the available COMET models read metrics descriptions [here](https://unbabel.github.io/COMET/html/models.html)
 
 
 ## Related Publications
@@ -104,7 +103,7 @@ For more information about the available COMET models read metrics descriptions 
 
 ## Citation
 
-If you found our work/code useful, consider citing our paper:
+If you found our work/code useful, please consider citing our paper:
 
 ```bibtex
 @article{glushkova2023bleu,
