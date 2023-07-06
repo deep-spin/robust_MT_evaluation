@@ -85,7 +85,7 @@ Here are the pretrained models that can be used to evaluate your translations:
 
 **Note:** The range of scores between different models can be totally different. To better understand COMET scores please [take a look at these FAQs](https://unbabel.github.io/COMET/html/faqs.html)
 
-
+**Note #2:** The word-level tags can be generated in different ways. To generate tags for subwords instead of tokens we use a modified version of [WMT word-level quality estimation task](https://github.com/deep-spin/qe-corpus-builder).
 
 ## Related Publications
 
