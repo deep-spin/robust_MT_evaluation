@@ -324,7 +324,7 @@ class RegressionMetric(CometModel):
         # )
 
         if self.hparams.model_type == 'wl-tags':
-            print('HERE regression_metric.py wl-tags')
+            # print('HERE regression_metric.py wl-tags')
             # for the WL model in the paper
             mt_tags_sentemb = self.get_sentence_embedding(mt_tags_input_ids, mt_tags_attention_mask)
             sum_mt_tags = mt_sentemb + mt_tags_sentemb
@@ -337,7 +337,7 @@ class RegressionMetric(CometModel):
 
         if self.hparams.model_type == 'original': # suitable for 'comet', 'comet+sl-features' and 'comet+aug'
             # original / original+features 6, comment out tokens in xlmr.py
-            print('HERE regression_metric.py original')
+            # print('HERE regression_metric.py original')
             embedded_sequences = torch.cat(
                 (mt_sentemb, ref_sentemb, prod_ref, diff_ref, prod_src, diff_src),
                 dim=1,

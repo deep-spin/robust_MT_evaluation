@@ -157,7 +157,7 @@ class CometModel(ptl.LightningModule, metaclass=abc.ABCMeta):
         self.mc_dropout = False  # Flag used to control usage of MC Dropout
         self.caching = False  # Flag used to control Embedding Caching
 
-        self.reproject_embed_layer = nn.Linear(self.hparams.hidden_sizes[1]*2, self.hparams.hidden_sizes[1])
+        # self.reproject_embed_layer = nn.Linear(self.hparams.hidden_sizes[1]*2, self.hparams.hidden_sizes[1])
 
     def set_mc_dropout(self, value: bool):
         self.mc_dropout = value
