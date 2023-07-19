@@ -76,11 +76,11 @@ To train a COMET model on your data you can use the following configuration file
 
 Here are the pretrained models that can be used to evaluate your translations:
 
-- [`comet-wl-tags`](https://unbabel-experimental-models.s3.amazonaws.com/comet/eamt23/comet-wl-tags.tar): Regression model with incorporated into the architecture word-level OK / BAD tags that correspond to the subwords of the translation hypothesis. (**COMET+WL-tags**)
+- [`comet-wl-tags`](https://unbabel-experimental-models.s3.amazonaws.com/comet/eamt23/comet-wl-tags.zip): Regression model with incorporated into the architecture word-level OK / BAD tags that correspond to the subwords of the translation hypothesis. (**COMET+WL-tags**)
 
-- [`comet-sl-feats`](https://unbabel-experimental-models.s3.amazonaws.com/comet/eamt23/comet-sl-feats.tar): Regression model that was enhanced with scores obtained from other metrics, BLEU and CHRF, that are used as sentence-level (SL) features in a late fusion manner. (**COMET+SL-feat.**)
+- [`comet-sl-feats`](https://unbabel-experimental-models.s3.amazonaws.com/comet/eamt23/comet-sl-feats.zip): Regression model that was enhanced with scores obtained from other metrics, BLEU and CHRF, that are used as sentence-level (SL) features in a late fusion manner. (**COMET+SL-feat.**)
 
-- [`comet-aug`](https://unbabel-experimental-models.s3.amazonaws.com/comet/eamt23/comet-aug.tar): Regression model that was trained on a mixture of original and augmented Direct Assessments from WMT17 to WMT20. We use the code provided by the authors of [SMAUG](https://github.com/Unbabel/smaug) and apply their choice of hyperparameters, including the optimal percentage of the augmented data. (**COMET+aug**)
+- [`comet-aug`](https://unbabel-experimental-models.s3.amazonaws.com/comet/eamt23/comet-aug.zip): Regression model that was trained on a mixture of original and augmented Direct Assessments from WMT17 to WMT20. We use the code provided by the authors of [SMAUG](https://github.com/Unbabel/smaug) and apply their choice of hyperparameters, including the optimal percentage of the augmented data. (**COMET+aug**)
 
 
 **Note:** The range of scores between different models can be totally different. To better understand COMET scores please [take a look at these FAQs](https://unbabel.github.io/COMET/html/faqs.html)
